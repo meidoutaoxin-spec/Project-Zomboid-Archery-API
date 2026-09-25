@@ -44,11 +44,9 @@ This project is licensed under the **GNU General Public License v3.0**
 > You should have received a copy of the GNU General Public License along with this program.
 > If not, see <https://www.gnu.org/licenses/>.
 
-**Action required before publishing:** this repository does **not** yet contain the verbatim
-`LICENSE` file. GPL-3.0 asks you to ship a copy of the license text with the work, so drop an
-(unmodified) copy of the official text from
-<https://www.gnu.org/licenses/gpl-3.0.txt> into the repository root as `LICENSE`.
-It was deliberately not pasted in here rather than risk shipping a subtly corrupted copy.
+**The licence text is included.** `LICENSE` in this package is an unmodified copy of the official
+GPL-3.0 text as published at <https://www.gnu.org/licenses/gpl-3.0.txt> (674 lines, 35,149 bytes,
+LF endings, pure ASCII). Keep it alongside the work when redistributing.
 
 Third-party components keep their own licenses and are **not** covered by the above — see
 [Dependencies](#dependencies) and [Provenance and licensing caveats](#provenance-and-licensing-caveats-read-this).
@@ -163,15 +161,17 @@ Copy the mod folder so the game sees it:
 ```
 
 …or keep it inside a Workshop item folder (`<Workshop>/<item>/Contents/mods/bowandarrowsystem/`).
-The **distributed** content is the `42/` folder only. The repository root also contains
-authoring material that is *not* installed by the game:
+The **distributed** content is the `42/` folder only. Alongside it this source package carries the
+Workshop item metadata shown below; the author's own working material (Blender sources, per-file
+backups, reverse-engineering notes) is deliberately **not** part of it:
 
 | Path | What it is |
 |---|---|
+| `README.md`, `LICENSE` | this document and the verbatim GPL-3.0 text |
 | `workshop.txt`, `preview.png`, `mod.info` | Steam Workshop item metadata |
-| `素材/` | source assets (Blender exports, frame sequences) |
-| `备份/` | timestamped backups of every edited file |
-| `弓弦动态变形_尝试汇总.md` | development notes on the string-deformation attempts |
+| Blender sources, frame sequences | art working files, kept in the author's workspace |
+| timestamped per-file backups | history of every edited file, kept in the author's workspace |
+| string-deformation notes | notes on the earlier approaches to the deforming string, kept in the author's workspace |
 
 ---
 
@@ -265,24 +265,28 @@ holds an exclusive lock on a jar that is loaded as a mod.
 
 Packaging notes:
 
-- `_classes_bowrig/` is build output and does not need to be shipped.
-- `media/ui/Reticle_transparent_backup/` is a set of stock reticle PNGs kept as reference; it
-  is not referenced by any script.
+- `_classes_bowrig/` is `javac` output and is **not** part of this source package; build it from `src/`.
+- `media/ui/Reticle_transparent_backup/` is a set of stock reticle PNGs kept as reference; nothing
+  references it. One of them is called `unknown_unused.png` here — literally "no idea what this was
+  for", which is what the author had written on it.
 
 ---
 
 ## Development tooling
 
-The project is accompanied by a set of Python checkers/simulators (kept outside the mod folder,
-in `Tool/`). They are the reason most of the claims in this README can be verified rather than
-assumed:
+The project is accompanied by a set of Python checkers/simulators, kept in a `Tool/` folder outside
+the mod itself. They are the reason most of the claims in this README can be verified rather than
+assumed. They are **not** part of this package; they are listed here under descriptive English
+names — in the author's workspace the files themselves carry short local names, and those are the
+names quoted in a few source comments.
 
 | Tool | What it proves |
 |---|---|
-| `弓模型选择仿真.py` | runs the *actual* model-selection code from `BAS_Client.lua` in a Lua interpreter over an 11-step input timeline and asserts which model is in hand at each step |
-| `弓帧接线校验.py` / `帧号映射校验.py` | the whole frame chain: source `.fbx` → installed `.fbx` → model script → item script → Lua, including identical node scaling across the frame family |
-| `模型尺寸体检.py` | flags a model family that was exported at mismatched scales (the classic "the bow suddenly changes size" bug) |
-| `glb*.py`, `fbx*.py` | animation/model inspection: bone consistency with the player skeleton, keyframe pacing, hand-travel measurement, unit checks |
+| `bow_model_selection_sim.py` | runs the *actual* model-selection code from `BAS_Client.lua` in a Lua interpreter over an 11-step input timeline and asserts which model is in hand at each step |
+| `bow_frame_wiring_check.py` / `frame_index_mapping_check.py` | the whole frame chain: source `.fbx` → installed `.fbx` → model script → item script → Lua, including identical node scaling across the frame family |
+| `model_scale_audit.py` | flags a model family that was exported at mismatched scales (the classic "the bow suddenly changes size" bug) |
+| `extract_cjk_lines.py` / `english_patch.py` | locate every non-ASCII line in the sources and rewrite them, verifying afterwards that no CJK character survives |
+| `glb_*.py`, `fbx_*.py` | animation/model inspection: bone consistency with the player skeleton, keyframe pacing, hand-travel measurement, unit checks |
 
 ---
 
@@ -351,6 +355,10 @@ from the game's own scripts and bytecode, not copied from those mods.
   triggered by name (`FishingRodSwing`, `M9Jam`, `WoodenStickHit`, `SpearCraftedHit`, …). The
   stock reticle PNGs under `media/ui/Reticle_transparent_backup/` are base-game textures kept
   only as reference; no script references them.
+- **Text**: `media/lua/shared/Translate/CN/*.json` are the mod's **Chinese** localisation tables and
+  are Chinese by design — they are the only intentionally non-English text in this package.
+  `media/lua/shared/Translate/EN/*.json` holds the English originals.
+- **Comments and console output** in `src/` and `media/lua/` are in English throughout.
 - **The game itself** (Project Zomboid, © The Indie Stone) is not covered by this licence, and
   no part of it is redistributed here.
 

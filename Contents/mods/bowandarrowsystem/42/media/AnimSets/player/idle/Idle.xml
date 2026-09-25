@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>Idle</m_Name>
+	<m_AnimName>Bob_Idle</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.48</m_SpeedScale>
+	<m_Scalar>IdleSpeed</m_Scalar>
+	<m_Scalar2>IdleSpeed</m_Scalar2>
+	<m_2DBlends referenceID="1">
+		<m_AnimName>Bob_Idle</m_AnimName>
+		<m_XPos>0.00</m_XPos>
+		<m_YPos>0.00</m_YPos>
+		<m_SpeedScale>0.80</m_SpeedScale>
+	</m_2DBlends>
+	<m_2DBlends referenceID="2">
+		<m_AnimName>Bob_Idle_HeavyBreathing</m_AnimName>
+		<m_XPos>0.00</m_XPos>
+		<m_YPos>1.00</m_YPos>
+		<m_SpeedScale>0.80</m_SpeedScale>
+	</m_2DBlends>
+	<m_2DBlends referenceID="3">
+		<m_AnimName>Bob_Idle</m_AnimName>
+		<m_XPos>0.00</m_XPos>
+		<m_YPos>0.04</m_YPos>
+		<m_SpeedScale>0.80</m_SpeedScale>
+	</m_2DBlends>
+	<m_Conditions x_name="20bee4f4-ff49-44f9-9d94-680b8fa7e4be">
+		<m_Name>isTurning90</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="82774ca9-68bb-4a0b-88b4-e3a445a41757">
+		<m_Name>isTurningAround</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_2DBlendTri>
+		<node1>1</node1>
+		<node2>2</node2>
+		<node3>3</node3>
+	</m_2DBlendTri>
+	<m_Transitions>
+		<m_Target>aim_default</m_Target>
+		<m_AnimName>Bob_IdleToAim_1Hand</m_AnimName>
+		<m_blendInTime>0.5</m_blendInTime>
+		<m_speedScale>1.5</m_speedScale>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>defaultWalk</m_Target>
+		<m_blendInTime>0.3</m_blendInTime>
+		<m_blendOutTime>0.3</m_blendOutTime>
+		<m_Conditions x_name="a862bdb4-6aca-4c00-ad4f-f37235ae3e45">
+			<m_Name>isTurningAround</m_Name>
+			<m_Type>BOOL</m_Type>
+			<m_Value>false</m_Value>
+		</m_Conditions>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>defaultRun</m_Target>
+		<m_AnimName>Bob_IdleToRun</m_AnimName>
+		<m_blendInTime>0.1</m_blendInTime>
+		<m_blendOutTime>0.1</m_blendOutTime>
+		<m_Conditions x_name="966b9471-df21-49a6-837c-ce621db8564a">
+			<m_Name>isTurningAround</m_Name>
+			<m_Type>BOOL</m_Type>
+			<m_Value>false</m_Value>
+		</m_Conditions>
+		<m_Conditions x_name="bce52e8f-85ef-4f51-9691-d02a89ea70ae">
+			<m_Name>walkinjury</m_Name>
+			<m_Type>EQU</m_Type>
+			<m_Value>0</m_Value>
+		</m_Conditions>
+		<m_Conditions x_name="90d2c784-b328-451b-a5ca-6604ff94ce22">
+			<m_Name>isOverEncumbered</m_Name>
+			<m_Type>BOOL</m_Type>
+			<m_Value>false</m_Value>
+		</m_Conditions>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>defaultSprint</m_Target>
+		<m_AnimName>Bob_IdleToSprint</m_AnimName>
+		<m_blendInTime>0.1</m_blendInTime>
+		<m_blendOutTime>0.1</m_blendOutTime>
+		<m_Conditions x_name="c0d91e62-2702-45f0-aa27-d1d03f693ef5">
+			<m_Name>isTurningAround</m_Name>
+			<m_Type>BOOL</m_Type>
+			<m_Value>false</m_Value>
+		</m_Conditions>
+		<m_Conditions x_name="d788a1e0-37f2-4c74-b117-936cb8143dee">
+			<m_Name>walkinjury</m_Name>
+			<m_Type>EQU</m_Type>
+			<m_Value>0</m_Value>
+		</m_Conditions>
+		<m_Conditions x_name="aa19bbab-55e1-4fac-9d11-e512172463cc">
+			<m_Name>isOverEncumbered</m_Name>
+			<m_Type>BOOL</m_Type>
+			<m_Value>false</m_Value>
+		</m_Conditions>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>climbFenceStart</m_Target>
+		<m_blendInTime>0.1</m_blendInTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>turn_idle</m_Target>
+		<m_blendInTime>0.2</m_blendInTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>sneakidle</m_Target>
+		<m_blendInTime>0.35</m_blendInTime>
+		<m_blendOutTime>0.35</m_blendOutTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>sneakIdleLow</m_Target>
+		<m_blendInTime>0.35</m_blendInTime>
+		<m_blendOutTime>0.35</m_blendOutTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>defaultRun</m_Target>
+		<m_blendInTime>0.1</m_blendInTime>
+		<m_blendOutTime>0.1</m_blendOutTime>
+		<m_Conditions x_name="4bbce58b-b7df-4ed6-aad7-500358b4bb9e">
+			<m_Name>isTurningAround</m_Name>
+			<m_Type>BOOL</m_Type>
+			<m_Value>false</m_Value>
+		</m_Conditions>
+		<m_Conditions x_name="5c860338-dda5-4b83-8419-5c46379e6681">
+			<m_Name>walkinjury</m_Name>
+			<m_Type>NEQ</m_Type>
+			<m_Value>0</m_Value>
+		</m_Conditions>
+		<m_Conditions x_name="89a7628a-19ec-4275-b3b5-798ce906329d">
+			<m_Type>OR</m_Type>
+		</m_Conditions>
+		<m_Conditions x_name="6927826d-d353-495d-9c65-1307279c3e8f">
+			<m_Name>isOverEncumbered</m_Name>
+			<m_Type>BOOL</m_Type>
+			<m_Value>true</m_Value>
+		</m_Conditions>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>defaultSprint</m_Target>
+		<m_blendInTime>0.1</m_blendInTime>
+		<m_blendOutTime>0.1</m_blendOutTime>
+		<m_Conditions x_name="ea9efd3c-37c5-464a-9434-64f6b853eabe">
+			<m_Name>isTurningAround</m_Name>
+			<m_Type>BOOL</m_Type>
+			<m_Value>false</m_Value>
+		</m_Conditions>
+		<m_Conditions x_name="ef8ced39-3399-4cd6-911d-f2019edfcb36">
+			<m_Name>walkinjury</m_Name>
+			<m_Type>NEQ</m_Type>
+			<m_Value>0</m_Value>
+		</m_Conditions>
+		<m_Conditions x_name="2cf666a9-4af5-46c8-bfca-fb7159cf91ab">
+			<m_Type>OR</m_Type>
+		</m_Conditions>
+		<m_Conditions x_name="aa5a3cac-6224-4a50-9329-4072fb709a38">
+			<m_Name>isOverEncumbered</m_Name>
+			<m_Type>BOOL</m_Type>
+			<m_Value>true</m_Value>
+		</m_Conditions>
+	</m_Transitions>
+</animNode>

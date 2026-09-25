@@ -1,0 +1,22 @@
+module BAS
+{
+	item BAS_Arrow
+	{
+		DisplayCategory = Ammo,
+		ItemType = base:normal,
+		Weight = 0.04,
+		Icon = BAS_ArrowWood,
+		StaticModel = BAS_Arrow,
+		WorldStaticModel = BAS_Arrow,
+		count = 1,
+		Tags = base:ammo,
+	}
+
+	item BAS_WoodArrowShaft
+	{
+		DisplayCategory = Component,
+		ItemType = base:normal,
+		Weight = 0.03,
+		Icon = BAS_WoodArrowShaft,
+	}
+}

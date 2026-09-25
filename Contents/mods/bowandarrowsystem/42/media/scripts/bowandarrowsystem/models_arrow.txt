@@ -1,0 +1,57 @@
+module Base
+{
+    model BAS_Arrow
+    {
+        mesh = weapons/BAS_Arrow,
+        texture = weapons/BAS_Arrow,
+        scale = 0.01,
+
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment stomach
+        {
+            offset = 0.033 0.003 0.275,
+            rotate = 3.0 84.0 -99.0,
+            bone = Bip01_Spine,
+        }
+
+        attachment knife_stomach
+        {
+            offset = 0.041 0.002 0.128,
+            rotate = 3.0 84.0 -99.0,
+            bone = Bip01_Spine,
+        }
+
+        attachment knife_shoulder
+        {
+            offset = 0.052 0.105 -0.08,
+            rotate = -173.0 -75.0 36.0,
+            bone = Bip01_L_Clavicle,
+        }
+
+        attachment knife_head
+        {
+            offset = -0.057 0.003 0.084,
+            rotate = -0.057 21.0 -96.0,
+            bone = Bip01_Head,
+        }
+
+        attachment knife_left_leg
+        {
+            offset = 0.015 -0.007 0.084,
+            rotate = -89.0 -2.0 -18.0,
+            bone = Bip01_L_Thigh,
+        }
+
+        attachment knife_right_leg
+        {
+            offset = 0.072 -0.005 0.082,
+            rotate = -89.0 -2.0 -34.0,
+            bone = Bip01_R_Thigh,
+        }
+    }
+}

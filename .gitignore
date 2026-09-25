@@ -1,0 +1,8 @@
+# Base-game UI textures kept in the author's working copy for reference only.
+# They are The Indie Stone's assets, so they are deliberately NOT redistributed
+# in this repository (this also keeps README's "no game assets are shipped" true).
+Contents/mods/bowandarrowsystem/42/media/ui/Reticle_transparent_backup/
+
+# javac output (build with: javac ... -d _classes_bowrig)
+_classes_bowrig/
+*.class

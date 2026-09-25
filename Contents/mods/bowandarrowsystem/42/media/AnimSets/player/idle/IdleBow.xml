@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Idle.xml">
+	<m_Name>IdleBow</m_Name>
+	<m_AnimName>ZoB_Gzhanli</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>ZoB_Gzhanli</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>ZoB_Gzhanli</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>ZoB_Gzhanli</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="5378e9a2-d0ad-4b6b-92e2-2d1b1156f483">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>BASBOW</m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>aim_bow</m_Target>
+		<m_AnimName>ZoB_GMiaozhuguodu</m_AnimName>
+		<m_blendInTime>0.05</m_blendInTime>
+		<m_blendOutTime>0.05</m_blendOutTime>
+		<m_speedScale>3.3333</m_speedScale>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>aim_bow_kong</m_Target>
+		<m_AnimName>ZoB_GMiaozhuguodu</m_AnimName>
+		<m_blendInTime>0.05</m_blendInTime>
+		<m_blendOutTime>0.05</m_blendOutTime>
+		<m_speedScale>3.3333</m_speedScale>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>aim_bow_full</m_Target>
+		<m_AnimName>ZoB_GMiaozhuguodu</m_AnimName>
+		<m_blendInTime>0.05</m_blendInTime>
+		<m_blendOutTime>0.05</m_blendOutTime>
+		<m_speedScale>3.3333</m_speedScale>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>walkRifle</m_Target>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>runRifle</m_Target>
+		<m_AnimName>Bob_IdleToRun_Rifle</m_AnimName>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>sprintFirearm</m_Target>
+		<m_AnimName>Bob_IdleToSprint_Rifle</m_AnimName>
+	</m_Transitions>
+	<m_Transitions />
+	<m_Transitions />
+	<m_Transitions>
+		<m_Target>sneakidleRifle</m_Target>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>sneakIdleLowRifle</m_Target>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>runRifle</m_Target>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>sprintFirearm</m_Target>
+	</m_Transitions>
+</animNode>

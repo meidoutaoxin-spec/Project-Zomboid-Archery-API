@@ -1,0 +1,10 @@
+module Base
+{
+    model BAS_BowIdle
+    {
+        mesh = weapons/2handed/BAS_BowRigAnim,
+        texture = weapons/BAS_Arrow,
+        static = true,
+        scale = 0.01,
+    }
+}

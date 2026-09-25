@@ -1,0 +1,29 @@
+version=1
+title=Bow And Arrow System
+description=
+
+description=Archery mod for Project Zomboid Build 42.
+
+description=[h1]Core Features[/h1]
+
+description=* Craft a Primitive Bow and a Hunting Bow
+description=* Craft wooden arrows (stone arrowheads) and metal arrows (metal arrowheads)
+description=* Minecraft-style bow: no reload key, no ammo in the bow
+description=* Arrows that hit zombies can be recovered from the corpse
+
+description=[h1]How to play[/h1]
+
+description=1. Craft arrows: Plank + Saw -> arrow shafts, knap Sharped Stone -> stone arrowheads, Scrap Metal -> metal arrowheads
+description=2. Combine shaft + arrowhead to make arrows
+description=3. Craft a bow and keep arrows in your inventory
+description=4. Aim (hold right mouse or Ctrl) to draw the bow, left click to loose an arrow. Drawing never consumes an arrow, only firing does
+description=5. Recovered arrows drop next to the corpse when a zombie dies
+
+description=[h1]Multiplayer[/h1]
+
+description=Works on dedicated servers. Arrow consumption and recovery are handled server-side.
+
+description=Mod ID: bowandarrowsystem
+
+tags=Build 42
+visibility=public

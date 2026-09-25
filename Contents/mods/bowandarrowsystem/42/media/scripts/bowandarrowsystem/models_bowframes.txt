@@ -1,0 +1,66 @@
+module Base
+{
+    model BAS_BowFrame01
+    {
+        mesh = weapons/2handed/BAS_BowFrame01,
+        texture = weapons/BAS_Arrow,
+        static = true,
+        scale = 0.01,
+    }
+
+    model BAS_BowFrame02
+    {
+        mesh = weapons/2handed/BAS_BowFrame02,
+        texture = weapons/BAS_Arrow,
+        static = true,
+        scale = 0.01,
+    }
+
+    model BAS_BowFrame03
+    {
+        mesh = weapons/2handed/BAS_BowFrame03,
+        texture = weapons/BAS_Arrow,
+        static = true,
+        scale = 0.01,
+    }
+
+    model BAS_BowFrame04
+    {
+        mesh = weapons/2handed/BAS_BowFrame04,
+        texture = weapons/BAS_Arrow,
+        static = true,
+        scale = 0.01,
+    }
+
+    model BAS_BowFrame05
+    {
+        mesh = weapons/2handed/BAS_BowFrame05,
+        texture = weapons/BAS_Arrow,
+        static = true,
+        scale = 0.01,
+    }
+
+    model BAS_BowFrame06
+    {
+        mesh = weapons/2handed/BAS_BowFrame06,
+        texture = weapons/BAS_Arrow,
+        static = true,
+        scale = 0.01,
+    }
+
+    model BAS_BowFrame07
+    {
+        mesh = weapons/2handed/BAS_BowFrame07,
+        texture = weapons/BAS_Arrow,
+        static = true,
+        scale = 0.01,
+    }
+
+    model BAS_BowFrame08
+    {
+        mesh = weapons/2handed/BAS_BowFrame08,
+        texture = weapons/BAS_Arrow,
+        static = true,
+        scale = 0.01,
+    }
+}

@@ -1,0 +1,55 @@
+module Base
+{
+craftRecipe BAS_CraftWoodArrowShaft
+{
+    timedAction = Making,
+    time = 60,
+    Tags = AnySurfaceCraft,
+    category = Archery,
+    inputs
+    {
+        item 1 tags[base:saw] mode:keep flags[MayDegradeLight],
+        item 1 [Base.Plank],
+    }
+    outputs
+    {
+        item 6 BAS.BAS_WoodArrowShaft,
+    }
+}
+
+craftRecipe BAS_CraftArrow
+{
+    timedAction = Making,
+    time = 40,
+    Tags = AnySurfaceCraft,
+    category = Archery,
+    inputs
+    {
+        item 1 [BAS.BAS_WoodArrowShaft],
+        item 1 [Base.SharpedStone],
+    }
+    outputs
+    {
+        item 1 BAS.BAS_Arrow,
+    }
+}
+
+craftRecipe BAS_CraftBow
+{
+    timedAction = Making,
+    time = 300,
+    Tags = AnySurfaceCraft,
+    category = Archery,
+    inputs
+    {
+        item 2 [Base.Plank],
+        item 1 [Base.Glue],
+        item 2 [Base.Twine],
+        item 4 [Base.Nails],
+    }
+    outputs
+    {
+        item 1 BAS.BAS_Bow,
+    }
+}
+}
