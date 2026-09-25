@@ -1,3 +1,4 @@
+![Uploading ProjectZomboid64_tfrOb9sfAE.gif…]()
 # Bow and Arrow System — for Project Zomboid (Build 42)
 
 A standalone archery mod for **Project Zomboid Build 42**: craftable bows and arrows, a
@@ -7,6 +8,10 @@ that physically stick in the zombies they hit.
 - **Mod ID:** `bowandarrowsystem`
 - **Game version:** Build 42 (`42/` version folder)
 - **Status:** work in progress / actively iterated
+<img width="486" height="502" alt="3" src="https://github.com/user-attachments/assets/4effeec0-422c-40d4-9cf0-f5d1773a3c1f" />
+<img width="730" height="548" alt="2" src="https://github.com/user-attachments/assets/cc2b1c22-ed8d-41c5-a83f-9acf6c3d3c03" />
+<img width="368" height="363" alt="1" src="https://github.com/user-attachments/assets/86595006-9945-4b28-82ac-510daec22283" />
+<img width="715" height="461" alt="4" src="https://github.com/user-attachments/assets/dfe2b94d-3543-400d-8e73-eb18567ea667" />
 
 ---
 
